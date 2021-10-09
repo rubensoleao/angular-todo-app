@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## json-server config
+
+just add a `db.json` file in the root directory with the content:
+
+```
+{
+    "tasks": [
+        { "id": 1, "text": "Task 1", "day": "Jan 1", "reminder": true },
+        { "id": 2, "text": "Task 2", "day": "Jan 2", "reminder": true },
+        { "id": 3, "text": "Task 3", "day": "Jan 3", "reminder": true },
+        { "id": 4, "text": "Task 4", "day": "Jan 4", "reminder": true }
+    ]
+}
+```
+
+and run yarn server. Your fake api will be at `localhost:5000`.
